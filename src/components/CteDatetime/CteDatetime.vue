@@ -24,10 +24,11 @@
 </template>
 
 <script>
-import BaseCte from './BaseCte'
+import BaseCte from './../BaseCte'
 import { parseISO, format } from 'date-fns'
 
 export default {
+  name: 'CteDatetime',
   components: {
     BaseCte
   },

@@ -21,6 +21,7 @@
 import BaseCte from './../BaseCte'
 
 export default {
+  name: 'CteText',
   components: {
     BaseCte
   },

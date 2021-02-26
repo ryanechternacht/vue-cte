@@ -23,6 +23,7 @@
 import BaseCte from './../BaseCte'
 
 export default {
+  name: 'CteSelect',
   components: {
     BaseCte
   },

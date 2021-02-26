@@ -1,15 +1,34 @@
 {
-  "name": "vue-click-to-edit",
+  "name": "vue-cte",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vue-cte.umd.min.js",
+
+  "author": "ryan echternacht",
+  "license": "MIT",
+  "description": "A click-to-edit library for Vue",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanechternacht/vue-cte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanechternacht/vue-cte/issues"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --target lib --name vue-cte src/main.js",
+    "lint": "vue-cli-service lint",
+     "prepublishOnly": "$npm_execpath build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "date-fns": "^2.17.0",
+    "vue": "^2.6.11",
+    "vue-click-outside": "^1.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -24,5 +43,10 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  ,
+  "keywords": [
+    "vue",
+    "vuejs",
+    "click-to-edit"
+  ]}
 }
